@@ -49,6 +49,7 @@ class GameBot:
                 continue
             game_object = self._game_loop()
             self._send_data(game_object)
+
         print("Game ended after %d rounds.\nYour score: %d\nOpponents' score: %s" % (
             game_object.get('round'), game_object.get('score')[0], str(game_object.get('score')[1:])))
 

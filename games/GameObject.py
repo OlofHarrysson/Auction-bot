@@ -42,3 +42,6 @@ class GameObject:
         :return: json string
         """
         return json.dumps(self._elements_dict)
+
+    def __str__(self):
+        return str(self._elements_dict)
